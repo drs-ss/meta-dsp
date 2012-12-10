@@ -1,0 +1,19 @@
+Index: easycom-gpp-dsplink/Linux/COMPONENT
+===================================================================
+--- easycom-gpp-dsplink.orig/Linux/COMPONENT
++++ easycom-gpp-dsplink/Linux/COMPONENT
+@@ -21,7 +21,7 @@
+ COMP_NAME       := LOOP
+ COMP_PATH       := $(TI_DSPLINK_GPPROOT)$(DIRSEP)src$(DIRSEP)samples$(DIRSEP)easycom-gpp-dsplink
+ COMP_TYPE       := LIB
+-COMP_TARGET     := loopgppAl2
++COMP_TARGET     := loopgppAl2.lib
+ COMP_MEMSPACE   := USER
+ 
+ 
+@@ -67,4 +67,4 @@ USR_LIBS        := dsplink.lib
+ #   Target file(s) exported from this module
+ #   ============================================================================
+ 
+-EXP_TARGETS     := loopgppAl2
++EXP_TARGETS     := loopgppAl2.lib

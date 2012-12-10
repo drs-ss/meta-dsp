@@ -1,0 +1,137 @@
+Index: gr-dsp/lib/dsp_fir_ccf.cc
+===================================================================
+--- gr-dsp.orig/lib/dsp_fir_ccf.cc	2012-11-15 16:09:09.179484307 -0500
++++ gr-dsp/lib/dsp_fir_ccf.cc	2012-11-15 17:57:28.235443348 -0500
+@@ -235,7 +235,7 @@
+ 	if (dsp_init_flag == 1)
+ 	{
+ 		printf("HEY INIT DSP CCF\n");	
+-		dsp_init_function("loopAl2.out");
++		dsp_init_function("/usr/share/easycom-dsp/loopAl2.out");
+ 		buff_size = coeff_size + COEFF_INDEX + 1;
+ 		transmit_data_dsp(d_temp_buff_source, buff_size, d_interpolation, d_decimation, d_fir_id);
+        		receive_data_dsp(d_temp_buff_dest, coeff_size, d_fir_id);
+Index: gr-dsp/lib/dsp_fir_ccf_fm_demod.cc
+===================================================================
+--- gr-dsp.orig/lib/dsp_fir_ccf_fm_demod.cc	2012-11-15 16:09:09.175484309 -0500
++++ gr-dsp/lib/dsp_fir_ccf_fm_demod.cc	2012-11-15 17:57:28.231443354 -0500
+@@ -229,7 +229,7 @@
+ 	if (dsp_init_flag == 1)
+ 	{
+ 		printf("HEY INIT DSP CCF\n");	
+-		dsp_init_function("loopAl2.out");
++		dsp_init_function("/usr/share/easycom-dsp/loopAl2.out");
+ 		buff_size = coeff_size + COEFF_INDEX + 1;
+ 		transmit_data_dsp(d_temp_buff_source, buff_size, d_interpolation, d_decimation, d_fir_id);
+        		receive_data_dsp(d_temp_buff_dest, coeff_size, d_fir_id);
+Index: gr-dsp/lib/dsp_fir_ccf_fm_demod_decim.cc
+===================================================================
+--- gr-dsp.orig/lib/dsp_fir_ccf_fm_demod_decim.cc	2012-11-15 16:09:09.179484307 -0500
++++ gr-dsp/lib/dsp_fir_ccf_fm_demod_decim.cc	2012-11-15 17:57:28.235443348 -0500
+@@ -232,7 +232,7 @@
+ 	if (dsp_init_flag == 1)
+ 	{
+ 		printf("HEY INIT DSP CCF\n");	
+-		dsp_init_function("loopAl2.out");
++		dsp_init_function("/usr/share/easycom-dsp/loopAl2.out");
+ 		buff_size = coeff_size + COEFF_INDEX + 1;
+ 		transmit_data_dsp(d_temp_buff_source, buff_size, d_interpolation, d_decimation, d_fir_id);
+        		receive_data_dsp(d_temp_buff_dest, coeff_size, d_fir_id);
+Index: gr-dsp/lib/dsp_fir_ccf_fm_demod_deemph.cc
+===================================================================
+--- gr-dsp.orig/lib/dsp_fir_ccf_fm_demod_deemph.cc	2012-11-15 16:09:09.171484307 -0500
++++ gr-dsp/lib/dsp_fir_ccf_fm_demod_deemph.cc	2012-11-15 17:57:28.227443361 -0500
+@@ -161,7 +161,7 @@
+ 	if (dsp_init_flag == 1)
+ 	{
+ 		printf("HEY INIT DSP CCF\n");	
+-		dsp_init_function("loopAl2.out");
++		dsp_init_function("/usr/share/easycom-dsp/loopAl2.out");
+ 		buff_size = coeff_size + COEFF_INDEX + 1;
+ 		transmit_data_dsp(d_temp_buff_source, buff_size, d_interpolation, d_decimation, d_fir_id);
+        		receive_data_dsp(d_temp_buff_dest, coeff_size, d_fir_id);
+Index: gr-dsp/lib/dsp_fir_ccf_fm_mod.cc
+===================================================================
+--- gr-dsp.orig/lib/dsp_fir_ccf_fm_mod.cc	2012-11-15 16:09:09.175484309 -0500
++++ gr-dsp/lib/dsp_fir_ccf_fm_mod.cc	2012-11-15 17:57:28.231443354 -0500
+@@ -229,7 +229,7 @@
+ 	if (dsp_init_flag == 1)
+ 	{
+ 		printf("HEY INIT DSP CCF\n");	
+-		dsp_init_function("loopAl2.out");
++		dsp_init_function("/usr/share/easycom-dsp/loopAl2.out");
+ 		buff_size = coeff_size + COEFF_INDEX + 1;
+ 		transmit_data_dsp(d_temp_buff_source, buff_size, d_interpolation, d_decimation, d_fir_id);
+        		receive_data_dsp(d_temp_buff_dest, coeff_size, d_fir_id);
+Index: gr-dsp/lib/dsp_fir_fff.cc
+===================================================================
+--- gr-dsp.orig/lib/dsp_fir_fff.cc	2012-11-15 16:09:09.175484309 -0500
++++ gr-dsp/lib/dsp_fir_fff.cc	2012-11-15 17:57:28.231443354 -0500
+@@ -119,7 +119,7 @@
+ 	if (dsp_init_flag == 1)
+ 	{
+ 		printf("HEY INIT DSP FFF\n");	
+-		dsp_init_function("loopAl2.out");
++		dsp_init_function("/usr/share/easycom-dsp/loopAl2.out");
+ 	}
+ 	else
+ 		printf("HEY DON'T INIT DSP FFF\n");
+Index: gr-dsp/lib/dsp_fm_mod.cc
+===================================================================
+--- gr-dsp.orig/lib/dsp_fm_mod.cc	2012-11-15 16:09:09.167484302 -0500
++++ gr-dsp/lib/dsp_fm_mod.cc	2012-11-15 17:57:28.227443361 -0500
+@@ -231,7 +231,7 @@
+ 	if (dsp_init_flag == 1)
+ 	{
+ 		printf("HEY INIT DSP CCF\n");	
+-		dsp_init_function("loopAl2.out");
++		dsp_init_function("/usr/share/easycom-dsp/loopAl2.out");
+ 		buff_size = coeff_size + COEFF_INDEX + 1;
+ 		transmit_data_dsp(d_temp_buff_source, buff_size, d_interpolation, d_decimation, d_fir_id);
+        		receive_data_dsp(d_temp_buff_dest, coeff_size, d_fir_id);
+Index: gr-dsp/lib/dsp_init.cc
+===================================================================
+--- gr-dsp.orig/lib/dsp_init.cc	2012-11-15 16:09:09.167484302 -0500
++++ gr-dsp/lib/dsp_init.cc	2012-11-15 17:57:51.987443296 -0500
+@@ -61,7 +61,7 @@
+ 	executed.
+ 	
+ 	the name of the DSP executable to be loaded is hardcoded in the
+-	C++ implementation of the block "loopAl2.out".  While it's hardcoded
++	C++ implementation of the block "/usr/share/easycom-dsp/loopAl2.out".  While it's hardcoded
+ 	the function can be easily modified to pass the DSP executable 
+ 	as a parameter
+ ***********************************************************************	
+@@ -84,16 +84,16 @@
+   	/*
+ 	***********************************************************************	
+ 	The dsp_init_function is called from the GPP/DSP Library the 
+-	"loopAl2.out" corresponds to the name of the DSP executable to be loaded
++	"/usr/share/easycom-dsp/loopAl2.out" corresponds to the name of the DSP executable to be loaded
+ 	
+ 	the name of the DSP executable to be loaded is hardcoded in the
+-	C++ implementation of the block "loopAl2.out".  While it's hardcoded
++	C++ implementation of the block "/usr/share/easycom-dsp/loopAl2.out".  While it's hardcoded
+ 	the function can be easily modified to pass the DSP executable 
+ 	as a parameter
+ 	***********************************************************************	
+ 	*/  
+ 
+-  dsp_init_function("loopAl2.out");
++  dsp_init_function("/usr/share/easycom-dsp/loopAl2.out");
+   
+   return 1;
+ }
+Index: gr-dsp/swig/dsp_init.i
+===================================================================
+--- gr-dsp.orig/swig/dsp_init.i	2012-11-15 16:12:25.031483070 -0500
++++ gr-dsp/swig/dsp_init.i	2012-11-15 17:57:28.239443345 -0500
+@@ -43,7 +43,7 @@
+ 	executed.
+ 	
+ 	the name of the DSP executable to be loaded is hardcoded in the
+-	C++ implementation of the block "loopAl2.out".  While it's hardcoded
++	C++ implementation of the block "/usr/share/easycom-dsp/loopAl2.out".  While it's hardcoded
+ 	the function can be easily modified to pass the DSP executable 
+ 	as a parameter
+ ***********************************************************************	

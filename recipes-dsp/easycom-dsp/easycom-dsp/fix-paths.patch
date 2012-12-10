@@ -1,0 +1,31 @@
+Index: easycom-dsp-dsplink/DspBios/COMPONENT
+===================================================================
+--- easycom-dsp-dsplink.orig/DspBios/COMPONENT
++++ easycom-dsp-dsplink/DspBios/COMPONENT
+@@ -43,7 +43,7 @@ USR_CC_FLAGS    += -mh128
+ USR_CC_FLAGS    += --opt_for_space=0
+ USR_CC_FLAGS    += -mw
+ USR_CC_FLAGS    += -mv6400+
+-USR_CC_FLAGS    += -i"/home/alfayez/secondary_hd/ti/DSPLIB/packages"
++USR_CC_FLAGS    +=  -I$(DSPLIB_INSTALL_DIR)/packages/
+ #USR_CC_FLAGS    += --include_path="/home/alfayez/secondary_hd/ti/DSPLIB/inc;/home/alfayez/secondary_hd/ti/DSPLIB/packages/ti/dsplib/src"
+ 
+ USR_CC_FLAGS    += --gen_profile_info
+@@ -79,7 +79,7 @@ STD_LIBS        :=
+ USR_LIBS        := dsplink.lib
+ USR_LIBS        += IQmath_RAM_c64x+.lib
+ USR_LIBS        += IQmath_c64x+.lib
+-USR_LIBS        += dsplib64plus.lib
++#USR_LIBS        += dsplib64plus.lib
+ USR_LIBS        += dsplib.a64P
+ 
+ ifeq ($(TI_DSPLINK_USE_POOL), 1)
+@@ -112,7 +112,7 @@ endif # ifeq ($(TI_DSPLINK_USE_RINGIO),
+ 
+ 
+ BASE_CCS_C64X		:= $(BASE_CCS)\c6400
+-BASE_CCS_C64XDSP	:= $(BASE_CCS_C64X)\dsplib
++BASE_CCS_C64XDSP	:= $(BOSE_CCS_C64X)\dsplib
+ BASE_CCS_C64XDSPINC	:= $(BASE_CCS_C64XDSP)\include
+ BASE_CCS_C64XDSPLIB	:= $(BASE_CCS_C64XDSP)\lib
+ 
