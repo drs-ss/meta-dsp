@@ -1,4 +1,8 @@
-GNU Radio DSP packages for OE-Core
+OpenEmbedded/Yocto layer for GNU Radio DSP support
+==================================================
+
+This layer provides recipes for the packages necessary to use the
+GNU Radio DSP blocks developed by Almohanad Fayez.
 
 This layer depends on:
 
