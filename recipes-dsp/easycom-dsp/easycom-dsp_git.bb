@@ -21,6 +21,8 @@ SRCREV = "master"
 
 S = "${WORKDIR}/git/easycom-dsp-dsplink"
 
+PARALLEL_MAKE = ""
+
 # SOC_FAMILY configuration
 
 DSPLINKPLATFORM_dm6446    = "DAVINCI"

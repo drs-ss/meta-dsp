@@ -18,6 +18,8 @@ SRCREV = "master"
 
 S = "${WORKDIR}/git/easycom-gpp-dsplink"
 
+PARALLEL_MAKE = ""
+
 export DSPLINK="${LINK_INSTALL_DIR}/dsplink"
 
 do_configure_prepend() {
