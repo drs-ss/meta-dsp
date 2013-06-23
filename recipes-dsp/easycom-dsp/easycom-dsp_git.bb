@@ -4,7 +4,6 @@ PRIORITY = "optional"
 
 LICENSE = "GPLv2+"
 DEPENDS = "ti-dsplink ti-dsplib ti-iqmathlib"
-RDEPENDS = "ti-dsplink"
 
 require recipes-ti/includes/ti-paths.inc
 
@@ -55,3 +54,5 @@ do_install() {
 }
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
+
+RDEPENDS_${PN} = "ti-dsplink"
