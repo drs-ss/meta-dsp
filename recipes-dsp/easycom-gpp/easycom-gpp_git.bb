@@ -3,7 +3,7 @@ SECTION = "apps"
 PRIORITY = "optional"
 LICENSE = "GPLv2+"
 DEPENDS = "linux-libc-headers libgcc ti-dsplink"
-RDEPENDS = "ti-dsplink"
+RDEPENDS_${PN} = "ti-dsplink"
 
 require recipes-ti/includes/ti-paths.inc
 
